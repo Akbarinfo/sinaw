@@ -69,15 +69,9 @@ main {
   margin-right: 31px;
 }
 
-.header-lang:hover .header-lang-list {
-  display: block;
-}
-
 .header-lang-list {
   position: absolute;
   display: none;
-  background-color: #171836;
-  box-shadow: #171836 0px 3px 8px;
   padding: 10px 20px;
 }
 
@@ -93,6 +87,10 @@ main {
   font-size: 12px;
   line-height: 150%;
   color: #d1d1d7;
+}
+
+.header-lang:hover .header-lang-list {
+  display: block;
 }
 
 .bx-globe {
@@ -495,7 +493,8 @@ main {
   text-align: center;
 }
 .main-what-link:hover {
-  background-color: #fff;
+  background-color: #f5443b;
+  color: #fff;
 }
 
 /* MAIN WHAT PART END  */
@@ -564,6 +563,7 @@ main {
 }
 
 .main-course-list {
+  position: relative;
   list-style-type: none;
 }
 
@@ -574,9 +574,16 @@ main {
   border-radius: 20px;
   padding: 36px;
 }
-
-.main-course-main {
-
+.main-course-item:nth-child(3)::before {
+  content: '';
+  width: 97px;
+  height: 97px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: url('../imgs/popular-bacround.png');
+  background-repeat: no-repeat;
 }
 
 .main-course-icon {
@@ -585,6 +592,13 @@ main {
   background-image: url('../imgs/icon-stars.png');
   background-repeat: no-repeat;
   padding: 10px;
+}
+.express {
+  background-image: url('../imgs/key-back.png');
+}
+
+.prem {
+  background-image: url('../imgs/crown-back.png');
 }
 
 .main-course-name {
@@ -606,6 +620,8 @@ main {
 }
 
 .main-course-dollor {
+  position: relative;
+  bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 150%;
@@ -620,11 +636,9 @@ main {
 }
 
 .main-course-list2 {
-  list-style-type: disc;
-  list-style-type: #9799CE;
+  list-style-type: none;
   border-top: 1.5px solid #272953;
   padding-top: 29px;
-  margin-bottom: 141px;
 }
 
 .main-course-item2 {
@@ -634,7 +648,19 @@ main {
   margin-bottom: 16px;
 }
 
+.main-course-item2::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #9799CE;
+  margin-right: 12px;
+}
+
 .main-course-btn {
+  position: absolute;
+  bottom: 36px;
   background: none;
   border: 1px solid #F5443B;
   border-radius: 6px;
@@ -643,13 +669,160 @@ main {
   line-height: 17px;
   color: #F5443B;
   padding: 16px 75px;
+  opacity: 0.5;
 }
+.main-course-btn:hover {
+  border: 1px solid #F5443B;
+  opacity: 1;
+}
+.main-course-btn:active {
+  opacity: 1;
+  background-color: #F5443B;
+  color: #fff;
+}
+
 /* MAIN COURSE PART END */
+
+/* MAIN APPS PART  */
+
+.main-apps {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.main-apps-box {
+  position: relative;
+  background: linear-gradient(102.01deg, #23265C 1.96%, #352A56 101.68%);
+  border-radius: 40px;
+  padding-left: 101px;
+  padding-bottom: 3px;
+}
+
+.main-apps-main {
+  width: 451px;
+  padding: 85px 0px;
+
+}
+
+.main-apps-title {
+  font-weight: 600;
+  font-size: 47.2727px;
+  line-height: 160%;
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.main-apps-text {
+  font-size: 18px;
+  line-height: 180%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+}
+
+.main-apps-icon {
+  margin-right: 25px;
+}
+
+.main-apps-img {
+  position: absolute;
+  top: 40px;
+  right: 105px;
+}
+/* MAIN APPS PART END */
 
 /* SITE MAIN END PART */
 
 
 /* SITE FOOTER PART  */
 
+.site-footer {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 30px;
+}
 
+.footer-part {
+  margin-bottom: 86px;
+}
+
+.footer-main {
+  position: relative;
+  left: -30px;
+  width: 234px;
+}
+
+.footer-logo {
+  width: 117px;
+  height: 56px;
+  margin-bottom: 8px;
+}
+
+.footer-desc {
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-item {
+  margin-right: 20px;
+}
+
+.footer-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.icon-socical {
+  font-size: 40px;
+  color: #acabbf;
+}
+
+.footer-nav {
+  margin-left: 59px;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+  margin-right: 81px;
+}
+
+.footer-nav-list:last-child {
+  margin-right: 0px;
+}
+
+.footer-nav-item {
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.footer-nav-item:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 24px;
+}
+
+.footer-nav-list .footer-nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-copright {
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8F91D0;
+}
 /* SITE FOOTER PART END */
