@@ -126,10 +126,14 @@ main {
   padding-bottom: 157px;
 }
 
+.hero-parts {
+  position: relative;
+}
+
 .hero-img {
   position: absolute;
   top: 0px;
-  left: 13%;
+  left: -120px;
   background-image: url('../imgs/img-backround.png');
   background-repeat: no-repeat;
   background-position-y: 153px;
@@ -140,8 +144,8 @@ main {
   position: absolute;
   width: 363px;
   height: 92px;
-  left: 594px;
-  top: 647px;
+  left: 219px;
+  top: 635px;
   background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%, rgba(23, 24, 54, 0.8) 127.36%);
   border-radius: 20px;
   padding: 20px;
@@ -273,7 +277,7 @@ main {
 .hero-img-book {
   position: absolute;
   top: 50px;
-  left: 40%;
+  left: 35%;
   z-index: 10;
   animation: book 2s linear infinite alternate;
 }
@@ -290,6 +294,7 @@ main {
 .hero-img-lup {
   position: absolute;
   top: 150px;
+  left: -40px;
   z-index: 10;
   animation: lup 2s linear infinite alternate;
 }
