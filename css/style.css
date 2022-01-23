@@ -398,8 +398,9 @@ main {
 
 .main-what-item {
   width: 276px;
-  height: 412px;
+  height: 432px;
   background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.17) 100%);
+  border: 3px solid rgba(50, 52, 101, 0.5);
   border-radius: 20px;
   padding: 12px;
   transition: all 0.4s linear;
@@ -576,6 +577,7 @@ main {
   width: 372px;
   height: 515px;
   background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.31) 100%);
+  border: 3px solid rgba(50, 52, 101, 0.5);
   border-radius: 20px;
   padding: 36px;
 }
